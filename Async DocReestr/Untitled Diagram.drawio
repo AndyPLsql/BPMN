@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net" modified="2023-07-13T08:32:15.667Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="kXXrXllI489qtFnTe1DY" version="21.6.2" type="github">
+  <diagram name="Page-1" id="NjFDEWICFP3jPbxYfcA-">
+    <mxGraphModel dx="1434" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Nmkfl6JvH0IRNUSPEG9z-1" value="SPD: p_SPD_SendToValidation" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Nmkfl6JvH0IRNUSPEG9z-2" value="SCOUT: Validation.p_SendToServiceBroker" style="rounded=0;whiteSpace=wrap;align=left;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;horizontal=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="340" width="270" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Nmkfl6JvH0IRNUSPEG9z-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Nmkfl6JvH0IRNUSPEG9z-5" target="Nmkfl6JvH0IRNUSPEG9z-78" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nmkfl6JvH0IRNUSPEG9z-5" value="&lt;pre&gt;from: &lt;b&gt;SourceService&lt;br&gt;&lt;/b&gt;to: &lt;b&gt;ValidationTargetService&lt;br&gt;&lt;/b&gt;contract: &lt;b&gt;ValidationContract&lt;br&gt;&lt;/b&gt;message type: &lt;b&gt;TestType&lt;/b&gt;&lt;/pre&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=middle;labelPosition=center;verticalLabelPosition=middle;" parent="1" vertex="1">
+          <mxGeometry x="250" y="380" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Nmkfl6JvH0IRNUSPEG9z-54" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;service:&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;text-align: left; background-color: initial; border-color: var(--border-color);&quot;&gt;ValidationTargetService&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+          <mxGeometry x="680" y="40" width="290" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Nmkfl6JvH0IRNUSPEG9z-55" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;queue: &lt;/span&gt;ValidationTargetQueue" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="Nmkfl6JvH0IRNUSPEG9z-54" vertex="1">
+          <mxGeometry x="10" y="30" width="270" height="210" as="geometry">
+            <mxRectangle x="10" y="30" width="270" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nmkfl6JvH0IRNUSPEG9z-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="Nmkfl6JvH0IRNUSPEG9z-55" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="100" as="sourcePoint" />
+            <mxPoint x="105" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nmkfl6JvH0IRNUSPEG9z-64" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;contract: &lt;/span&gt;ValidationContract" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Nmkfl6JvH0IRNUSPEG9z-55" vertex="1">
+          <mxGeometry x="10" y="70" width="250" height="130" as="geometry">
+            <mxRectangle x="10" y="70" width="250" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nmkfl6JvH0IRNUSPEG9z-65" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;message type: &lt;/span&gt;TestType" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="Nmkfl6JvH0IRNUSPEG9z-64" vertex="1">
+          <mxGeometry x="10" y="60" width="230" height="60" as="geometry">
+            <mxRectangle x="10" y="60" width="220" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nmkfl6JvH0IRNUSPEG9z-66" value="validateion = NONE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Nmkfl6JvH0IRNUSPEG9z-65" vertex="1">
+          <mxGeometry x="10" y="30" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nmkfl6JvH0IRNUSPEG9z-67" value="sent by ANY" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Nmkfl6JvH0IRNUSPEG9z-64" vertex="1">
+          <mxGeometry x="10" y="30" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nmkfl6JvH0IRNUSPEG9z-57" value="Validation.p_CreateReport" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.05263157894736842;" parent="Nmkfl6JvH0IRNUSPEG9z-55" vertex="1">
+          <mxGeometry x="10" y="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nmkfl6JvH0IRNUSPEG9z-69" value="service:&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color); background-color: initial; text-align: left;&quot;&gt;SourceService&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+          <mxGeometry x="360" y="40" width="290" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Nmkfl6JvH0IRNUSPEG9z-70" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;queue: &lt;/span&gt;SourceQueue" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="Nmkfl6JvH0IRNUSPEG9z-69" vertex="1">
+          <mxGeometry x="10" y="30" width="270" height="70" as="geometry">
+            <mxRectangle x="10" y="30" width="270" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nmkfl6JvH0IRNUSPEG9z-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="Nmkfl6JvH0IRNUSPEG9z-70" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="100" as="sourcePoint" />
+            <mxPoint x="105" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nmkfl6JvH0IRNUSPEG9z-76" value="p_SourceQueueProcessor" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.05263157894736842;" parent="Nmkfl6JvH0IRNUSPEG9z-70" vertex="1">
+          <mxGeometry x="10" y="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nmkfl6JvH0IRNUSPEG9z-78" value="SCOUT: Validation.p_CreateReport" style="rounded=0;whiteSpace=wrap;align=left;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;horizontal=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="540" width="270" height="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
